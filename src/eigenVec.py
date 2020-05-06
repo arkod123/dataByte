@@ -40,19 +40,28 @@ plt.show()
 
 
 ### example 2
-A = np.array([
-    [1, 2, 0],
-    [2, 1, 0],
-    [0, 0, -3]
-])
+A = np.array([[5, 1], [3, 3]])
+
 # let the transform equation be : v = A.v
 v = np.array([
-    [1],
-    [1],
-    [1]
+    [0.70710678],
+    [ 0.70710678]
 ])
 
-print(np.dot(A, v))
+Av = np.dot(A, v)
+
+print(Av)
+# plot
+plt.style.use('seaborn-whitegrid')
+plt.figure(figsize=(8, 8))
+origin = [0, 0], [0, 0]
+plt.quiver(*origin, v[0], v[1], color=['r'], scale=11)
+plt.quiver(*origin, Av[0], Av[1], color=['g'], scale=11)
+plt.xlim(-1,9)
+plt.ylim(-1, 9)
+plt.show()
+
+
 
 
 
