@@ -57,6 +57,7 @@ u = np.array([[1, 0]])
 v = np.array([[0, 2]])
 vecs = np.concatenate((u, v))
 v2 = transform(vecs)
+
 origin = [0, 0], [0, 0]
 plt.style.use('seaborn-whitegrid')
 plt.figure(figsize=(8, 8))
