@@ -66,3 +66,6 @@ plt.quiver(*origin, v2[:, 0], v2[:, 1], color=['r', 'g'], linestyle='dashed', sc
 plt.ylim(-1, 4)
 plt.xlim(-1, 4)
 plt.show()
+
+
+

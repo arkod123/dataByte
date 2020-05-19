@@ -5,8 +5,6 @@ apply regression model on the diabetes dataset and then apply dimensionality red
 overall accuracy
 """
 
-
-
 # import libraries
 import pandas as pd
 import numpy as np
